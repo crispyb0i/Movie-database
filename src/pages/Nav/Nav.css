@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  font-size: 30px;
+  background-color: #050401;
+}
+
+.navbar__container {
+  display: flex;
+  flex-flow: right nowrap;
+  justify-content: space-around;
+  font-size: 30px;
+  width: 100%;
+  list-style-type: none;
+  padding: 5px;
+  min-width: 400px;
+}
+
+.navbar__listItem {
+  color: #FFFAFF;
+}
+
+@media only screen and (max-width: 768px) {
+
+}

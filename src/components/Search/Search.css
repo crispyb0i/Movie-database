@@ -1,0 +1,37 @@
+.search {
+  height: 50px;
+  background-color: black;
+}
+
+.search__form {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  height: 80%;
+  width: 65%;
+  max-width: 600px;
+  border-radius: 20px;
+  transition: height .5s, width .5s, border-radius .5s;
+  padding: 10px;
+}
+
+.search__input[placeholder] {
+  font-size: 20px;
+  padding: 10px;
+  transition: font-size .5s, padding .5s;
+}
+
+.search__input:focus {
+  transition: height .5s, font-size .5s, width .5s;
+  height: 100%;
+  font-size: 30px;
+  width: 70%;
+}
+
+.search__input:focus-visible {
+  outline: none;
+}

@@ -1,0 +1,45 @@
+.movie-page {
+  width: 100vw;
+}
+
+.movie-page__banner {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 60vh;
+}
+
+.movie-page__backdrop {
+  position: absolute;
+  display: block;
+  z-index: -1;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  background: rgba(98.82%, 98.82%, 98.82%);
+  opacity: 85%;
+}
+
+.movie-page__poster-container__image {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 80%;
+  margin-left: 40px;
+}
+
+.movie-page__description {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  padding: 50px;
+  width: 80vw;
+}
+
+.movie-page__description__header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.movie-page__description__header__title {
+  font-size: 40px;
+}
