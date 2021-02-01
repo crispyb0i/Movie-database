@@ -2,22 +2,27 @@
   width: 100vw;
 }
 
+.movie-page__bottom-container {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+}
+
 .movie-page__banner {
   display: flex;
   align-items: center;
-  width: 100vw;
-  height: 60vh;
+  width: 75vw;
+  box-shadow: 0 0 8px 8px white inset;
+  margin: auto;
 }
 
 .movie-page__backdrop {
-  position: absolute;
   display: block;
   z-index: -1;
   width: 100%;
-  height: inherit;
   object-fit: cover;
   background: rgba(98.82%, 98.82%, 98.82%);
-  opacity: 85%;
+  opacity: 90%;
 }
 
 .movie-page__poster-container__image {
@@ -35,11 +40,34 @@
   width: 80vw;
 }
 
+.movie-page__details {
+  padding: 20px;
+}
+
+.movie-page__details p {
+  font-size: 20px;
+}
+
+.movie-page__details h2 {
+  font-size: 30px;
+}
+
+.movie-page__panel {
+  flex-direction: column;
+  padding: 50px;
+}
+
 .movie-page__description__header {
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 5px;
 }
+
 .movie-page__description__header__title {
   font-size: 40px;
+}
+
+.movie-page__description__header__tagline {
+  font-size: 20px;
 }

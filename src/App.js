@@ -1,8 +1,9 @@
 import Search from './components/Search/Search';
-import MoviePage from './components/MoviePage/MoviePage'
+import MoviePage from './pages/MoviePage/MoviePage'
 import Profile from './components/Profile/Profile'
-import Nav from './pages/Nav/Nav'
-import Footer from './pages/Footer/Footer'
+import SignIn from './pages/SignIn/SignIn'
+import Nav from './components/Nav/Nav'
+import Footer from './components/Footer/Footer'
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,14 +22,16 @@ const App = () => {
               <h1 className='App__title'>MOVIE DATABASE</h1>
               <Search />
           </Route>
-          <Route exact path='/movie/:id'>
+          <Route path='/movie/:id'>
             <MoviePage />
           </Route>
-          <Route exact path='/profile'>
+          <Route path='/profile'>
             <Profile />
           </Route>
+          <Route path='/sign-in'>
+            <SignIn />
+          </Route>
         </Switch>
-        {/*<Footer />*/}
       </div>
     </Router>
   );
