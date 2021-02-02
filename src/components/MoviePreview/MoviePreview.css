@@ -15,7 +15,6 @@
 .movie-preview__image:hover {
   width: 105%;
   height: 105%;
-  border-radius: 10px;
   transition: width .5s, height .5s;
 }
 

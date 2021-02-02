@@ -1,6 +1,12 @@
 const movieSearchURL = 'https://api.themoviedb.org/3/movie/'
 const multiSearchURL = 'https://api.themoviedb.org/3/search/multi'
+const personURL = 'https://api.themoviedb.org/3/person/'
 const API_KEY = process.env.REACT_APP_API_KEY
+
+export const fetchPerson = (person_id) => {
+  return fetch(`${personURL}${person_id}?api_key=${API_KEY}&language=en-US`)
+    .then(response => response.json())
+}
 
 export const fetchTrendingMovies = () => {
   return fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`)

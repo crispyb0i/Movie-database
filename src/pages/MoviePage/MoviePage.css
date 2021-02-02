@@ -4,7 +4,7 @@
 
 .movie-page__bottom-container {
   display: flex;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
 }
 
@@ -25,6 +25,12 @@
   opacity: 90%;
 }
 
+.movie-page__cast-container {
+  display: flex;
+  overflow: scroll;
+  width: 100%;
+}
+
 .movie-page__poster-container__image {
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -42,6 +48,7 @@
 
 .movie-page__details {
   padding: 20px;
+  width: 80%;
 }
 
 .movie-page__details p {
@@ -62,6 +69,7 @@
   color: white;
   padding: 20px;
   border-radius: 5px;
+  width: 80%;
 }
 
 .movie-page__description__header__title {

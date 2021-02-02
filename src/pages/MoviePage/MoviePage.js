@@ -1,10 +1,11 @@
 import { BoxLoading } from 'react-loadingg';
-import Panel from '../../components/Panel/Panel'
+import Panel from '../../components/Panel/Panel';
+import CastCard from '../../components/CastCard/CastCard';
 import './MoviePage.css';
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from 'react'
-import { fetchMovieData, fetchMovieCredits } from '../../services/api'
-import { formatGenres } from '../../utils/utils'
+import { useState, useEffect } from 'react';
+import { fetchMovieData, fetchMovieCredits } from '../../services/api';
+import { formatGenres } from '../../utils/utils';
 
 const MoviePage = () => {
 
@@ -90,6 +91,13 @@ const MoviePage = () => {
             <h2>OVERVIEW</h2>
             <br></br>
             <p>{overview}</p>
+            <br></br>
+            <h2>CAST</h2>
+            <div className="movie-page__cast-container">
+              { movieCredits.cast && movieCredits.cast.map(cast =>
+                <CastCard movieCredits={cast} />
+              )}
+            </div>
           </div>
         </div>
 

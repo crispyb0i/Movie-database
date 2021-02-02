@@ -1,0 +1,11 @@
+.person-page {
+  display: block;
+  margin: auto;
+  width: 80vw;
+}
+
+.person-page__image {
+  height: 500px;
+  border-radius: 50px;
+  padding: 20px;
+}
